@@ -97,7 +97,12 @@ address {
 
 .contact-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
+}
+
+.contacts-icon {
+margin-right: 10px;
 }
 .accent {
   color: #2196f3;
@@ -146,9 +151,7 @@ address {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -185,7 +188,7 @@ address {
   border: none;
 }
 
-/*  Про нас  */
+/*  About us  */
 
 .visually-hidden {
   position: absolute;
@@ -210,6 +213,21 @@ address {
   gap: 30px;
   text-decoration: none;
 }
+
+.conteiner-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+
+
+}
+
 
 .about-title-name {
   margin-bottom: 10px;
@@ -252,7 +270,7 @@ address {
   gap: 30px;
 }
 
-/*  Наша команда  */
+/*  Our team  */
 
 .our-team {
   background-color: #f5f4fa;
@@ -298,7 +316,7 @@ address {
 }
 
 .about-team-text {
-  margin: 0;
+  margin-bottom: 16px;
   padding: 0;
 
   font-weight: 400;
@@ -309,6 +327,31 @@ address {
   color: var(--title-text-color);
 }
 
+.socials {
+  display: flex;
+justify-content: center;
+gap: 10;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #AFB1B8;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--accent-color);
+  background-color: var(--button-color);
+}
+.socials-icon {
+  fill: currentColor;
+}
 /* FOOTER */
 
 .footer {
