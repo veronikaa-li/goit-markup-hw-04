@@ -135,7 +135,8 @@ address {
 }
 
 .header-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -156,6 +157,7 @@ address {
   background-color: var(--hero-backgroud-color);
   padding: 200px 0;
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -335,7 +337,7 @@ address {
 .socials {
   display: flex;
   justify-content: center;
-  gap: 10;
+  gap: 10px;
 }
 
 .socials-link {
@@ -345,7 +347,7 @@ address {
   width: 44px;
   height: 44px;
   color: var(--border-color);
-  background-color: var(--accent-color);
+
   border-radius: 50%;
 }
 
@@ -378,7 +380,6 @@ address {
   align-items: center;
   justify-content: center;
   color: var(--border-color);
-  background-color: var(--primary-backgroud-color);
 
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -403,7 +404,7 @@ address {
 .container-footer {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+  /* margin-right: 70px; */
 }
 .footer-logo {
   margin-bottom: 20px;
@@ -442,6 +443,9 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.social-networks {
+  margin-left: 70px;
+}
 .join {
   font-weight: 700;
   font-size: 14px;
@@ -498,6 +502,10 @@ address {
   color: var(--primary-text-color);
   background: var(--icon-background-color);
   border: none;
+}
+
+.second-btn:hover,
+.second-btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -537,14 +545,10 @@ address {
 
 .work-project {
   display: block;
-  background: var(--accent-color);
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-project:hover,
 .work-project:focus {
-  color: var(--accent-color);
-  background-color: var(--button-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
