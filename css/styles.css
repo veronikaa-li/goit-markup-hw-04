@@ -363,7 +363,7 @@ address {
 /* Clients */
 
 .clients {
-  background-color: var(--primary-backgroud-color);
+
   padding: 94px 0;
 }
 .clients-list {
